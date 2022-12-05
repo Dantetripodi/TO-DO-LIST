@@ -1,2 +1,2 @@
 # TO-DO-LIST 
-Una pequeña app que sirver para agregar una lista de compras 
+Una pequeña app que tiene la funcion de agregar tareas como si fuese una lista de compras con una pqueña descripcion de la compra a hacer 
