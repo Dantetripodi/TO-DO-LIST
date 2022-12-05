@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo listo</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>🛒 Todo listo</header>
+
+    <button class="fab">➕</button>
+
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col empty">No tenés ningun producto usá el boton de abajo para cargar uno nuevo.</div>
+
+        <div class="col lista d-none">
+          <h2 class="mb-4">Listado de productos</h2>
+          <ul class="listado">
+            <!-- <li>producto</li> -->
+          </ul>
+        </div>
+
+        <div class="col form d-none">
+          <div class="container position-relative">
+            <button class="btn btn-warning btn-cerrar">❌</button>
+            <h2 class="mb-4">Agregar producto</h2>
+            <form id="formulario">
+              <div class="mb-3">
+                <label for="titulo" class="form-label">Titulo</label>
+                <input type="text" class="form-control" id="titulo" placeholder="Queso rallado..." />
+              </div>
+
+              <div class="mb-3">
+                <label for="categoria" class="form-label">Categoría</label>
+                <select class="form-select" id="categoria" aria-label="Default select example">
+                  <option selected>Elegí una categoria</option>
+                         <option value="imagenes/comida.png">🍔Comida</option>
+                         <option value="🎧">🎧Electronica</option>
+                         <option value="💻">💻Tecnologia</option>
+                         <option value="👔">👔Ropa></option>
+                         <option value="🧹">🧹Limpieza</option>
+                         <option value="🚪">🚪Bazar</option>
+                         <option value="🍾">🍾Bebidas</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripción</label>
+                <textarea class="form-control" id="descripcion" placeholder="Descripción del produto"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Guardar producto</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col detalle d-none">
+          <h2 class="mb-4">Detalle</h2>
+          <ul class="listado detalleProducto">
+            <!-- <li>producto</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
