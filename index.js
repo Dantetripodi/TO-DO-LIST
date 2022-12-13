@@ -86,8 +86,8 @@ const verDetalle = (titulo, categoria, descripcion) => {
 }
 
 const setProductosLocal = () => {
-  //let items = localStorage.getItem(JSON.parse(listadoLocal));
-  let items = JSON.parse(localStorage.getItem("listadoLocal"));
+  let items = localStorage.getItem(JSON.parse(listadoLocal));
+  //let items = JSON.parse(localStorage.getItem("listadoLocal"));
   if (items) {
     console.log(items)
     listadoProductos = items;
